@@ -13,7 +13,7 @@ COPY ./app /app/
 WORKDIR /app
 
 #Expose the port to the django development server
-EXPOSE 8000
+EXPOSE 9000
 
 ARG DEV=false
 
@@ -33,7 +33,7 @@ ENV PATH="/env/bin:$PATH"
 USER django_user
 
 # # start django development server
-# CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+# CMD ["python", "manage.py", "runserver", "0.0.0.0:9000"]
 
 
 
